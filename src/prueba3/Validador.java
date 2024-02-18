@@ -11,7 +11,6 @@ public class Validador {
         if (texto == null || texto.isEmpty()) {
             throw new TextoInvalidoException("El texto no puede ser nulo ni vacío");
         }
-        // Lógica adicional de validación si es necesaria
     }
 }
 

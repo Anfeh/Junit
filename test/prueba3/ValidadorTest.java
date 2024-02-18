@@ -9,11 +9,11 @@ class ValidadorTest {
     @Test
     public void test(){
         Validador validador = new Validador();
-
+        String texto = "El texto no puede ser nulo ni vacío";
         try {
-            assertEquals("",validador.validarTexto(null));
+            validador.validarTexto("");
         } catch (TextoInvalidoException e) {
-            throw new RuntimeException(e);
+            assertEquals(texto,e.getMessage());
         }
 
 
