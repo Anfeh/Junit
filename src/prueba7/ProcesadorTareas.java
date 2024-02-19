@@ -7,7 +7,7 @@ public class ProcesadorTareas {
      * @param tiempoEspera Tiempo en milisegundos que la tarea deberá dormir, simulando una ejecución larga.
      * @throws InterruptedException Si el hilo es interrumpido mientras duerme.
      */
-    public void ejecutarTareaLarga(int tiempoEspera) throws InterruptedException {
+    public static void ejecutarTareaLarga(int tiempoEspera) throws InterruptedException {
         // Simulación de una tarea de larga duración
         Thread.sleep(tiempoEspera);
     }
